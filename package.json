@@ -1,0 +1,16 @@
+{
+  "name": "tic-tac-toe-game",
+  "version": "1.0.0",
+  "description": "Mi primer juego web con TypeScript",
+  "main": "dist/game.js",
+  "scripts": {
+    "build": "tsc",
+    "build:prod": "tsc && npm run copy-files",
+    "copy-files": "cp src/index.html dist/ && cp src/style.css dist/",
+    "watch": "tsc --watch",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
